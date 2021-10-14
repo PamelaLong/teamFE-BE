@@ -1,20 +1,21 @@
-import backEnd from "./redux/reducers/backEnd";
-import frontEnd from "./redux/reducers/backEnd";
+import { BACK_END } from "../action-types/team-types";
+import { FRONT_END } from "../action-types/team-types";
 
+// export const StudentData = (dispatch, ) => {
+//     dispatch({type: StudentData })
+    // console.log(message);
+// };
 
-export const StudentData = (dispatch, message) => {
-    dispatch({type: StudentData })
+export const addToBackEnd = (dispatch, student) => {
+    dispatch({type: BACK_END,
+    payload: student})
     // console.log(message);
 };
 
-export const backEnd = (dispatch, message) => {
-    dispatch({type: backEnd})
+export const addToFrontEnd = (dispatch, student) => {
+    dispatch({type: FRONT_END,
+    payload: student})
     // console.log(message);
 };
 
-export const frontEnd = (dispatch, message) => {
-    dispatch({type: frontEnd })
-    // console.log(message);
-};
 
-export default TeamActions;

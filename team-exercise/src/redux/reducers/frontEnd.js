@@ -5,7 +5,7 @@ const initialState = [];
 const FrontEnd = (state = initialState, action) => {
   switch (action.type) {
     case "FRONTEND":
-      return state + frontEnd;
+      return 
     
     default:
       return state;

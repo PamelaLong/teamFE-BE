@@ -1,2 +1,2 @@
-const backEnd = "BACK_END";
-const frontEnd = "FRONT_END";
+export const BACK_END = "BACK_END";
+export const FRONT_END = "FRONT_END";
