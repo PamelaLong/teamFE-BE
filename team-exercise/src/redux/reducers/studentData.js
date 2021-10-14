@@ -1,3 +1,6 @@
+import backEnd from "./backEnd";
+import frontEnd from "./frontEnd";
+
 import Tim from "../../assets/tim.png";
 import Deanna from "../../assets/deanna.png";
 import Matt from "../../assets/matt.png";
@@ -36,6 +39,12 @@ const initialState = [
 
 const StudentData = (state = initialState, action) => {
   switch (action.type) {
+    case "BACKEND":
+      return state + backEnd 
+    
+    case "FRONTEND":
+      return frontEnd
+
     default:
       return state;
   }
