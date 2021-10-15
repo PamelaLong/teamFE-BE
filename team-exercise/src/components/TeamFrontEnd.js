@@ -1,6 +1,8 @@
 import React from "react";
 import "./Teams.css";
 import { useDispatch } from 'react-redux';
+import FrontEnd from "../redux/reducers/frontEnd";
+import BackEnd from "../redux/reducers/frontEnd";
 
 
 export default function TeamFrontEnd(props) {
@@ -17,8 +19,8 @@ export default function TeamFrontEnd(props) {
               <img src={student?.image} alt="" srcset="" />
               <h4>{student?.name}</h4>
               <div>
-                {/* <button onClick= {() => frontEnd(dispatch, "moved to team front end")}>Team Frontend</button>
-                <button onClick= {() => backEnd(dispatch, "moved to team back end")}>Team Backend</button> */}
+                <button onClick= {() => FrontEnd(dispatch, "moved to team front end")}>Team Frontend</button>
+                <button onClick= {() => BackEnd(dispatch, "moved to team back end")}>Team Backend</button>
               </div>
             </div>
           );
